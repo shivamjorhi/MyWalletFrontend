@@ -1,0 +1,15 @@
+<div class="jumbotron">
+    <h1>Transfer Money</h1>
+    <form (ngSubmit)="transferMoney()">
+        Enter the mobile number of account from which you want to Transfer: <input type="text" [(ngModel)]="from" name="from" id="from">
+        <br>
+        Enter the mobile number of account from which you want to deposte: <input type="text" [(ngModel)]="to" name="to" id="to">
+        <br>
+        Enter the amount: 
+        <input type="text" [(ngModel)]="amount" name="amount" id="amount">
+       
+        <br>
+        <div class="btn-group">
+            <button type="submit" class="btn btn-success">Transfer</button>
+        </div>
+    </form>

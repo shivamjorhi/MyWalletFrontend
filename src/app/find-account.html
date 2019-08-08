@@ -1,0 +1,27 @@
+<div class="jumbotron">
+<h1>Find Account Details</h1>
+<form (ngSubmit)="searchAccount()">
+    <input type="text" [(ngModel)]="mobile" name="mobile" id="mobile">
+    <div class="btn-group">
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+</form>
+<br>
+<div  *ngIf="status">
+    <table border="1" >
+        <tr>
+        <th>Account Id</th>
+        <th>Account MobileNo</th>
+        <th>Account Holder Name</th>
+        <th>Account Balance</th>
+        </tr>
+
+        <tr>
+            <td>{{accounts.aid}}</td>
+            <td>{{accounts.mobile}}</td>
+            <td>{{accounts.accountholder}}</td>
+            <td>{{accounts.balance}}</td>
+        </tr>
+    </table>
+</div>
+</div>

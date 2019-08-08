@@ -1,0 +1,18 @@
+<h1>Add Account details</h1>
+<form>
+    <label>Account Id:</label>
+    <input type="text" [(ngModel)]="account.aid" name="aid" id="aid"/>
+    <br>
+    <label>Account Holder Name:</label>
+    <input type="text" [(ngModel)]="account.accountholder" name="accountholder" id="accountholder"/>
+    <br>
+    <label>Account Mobile no.</label>
+    <input type="text" [(ngModel)]="account.mobile" name="mobile" id="mobile"/>
+    <br>
+    <label>Account Balance:</label>
+    <input type="text" [(ngModel)]="account.balance" name="balance" id="balance"/>
+    <br>
+    <button class="btn btn-success" (click)="createAccount()">Create</button>
+</form>
+
+<
